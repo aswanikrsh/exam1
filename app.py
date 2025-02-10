@@ -15,7 +15,7 @@ st.title('Penguin Species Prediction')
 st.subheader('Enter the data')
 
 data = sns.load_dataset('penguins')
-# df = pd.read_csv('data')
+data.to_csv('penguins')
 
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
